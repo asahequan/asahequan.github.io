@@ -1,4 +1,4 @@
-/* ===== 背景をスマホでも完全固定にする ===== */
+/* ===== 背景を完全固定（スマホOK） ===== */
 body::before{
   content:"";
   position:fixed;
@@ -6,24 +6,23 @@ body::before{
   left:0;
   width:100vw;
   height:100vh;
-  background:url(http://ul.h3z.jp/gfkj4maf.jpeg) center center / cover no-repeat;
+  background:url(https://ul.h3z.jp/MsVIzdOd.jpeg) center center / cover no-repeat;
   z-index:-1;
 }
 
-/* 余計な背景指定を消す */
 html, body{
   margin:0 !important;
   padding:0 !important;
   background:none !important;
 }
 
-/* ===== スレ全体を1つの箱にする ===== */
-body table:first-of-type{
+/* ===== NBBSの一番外側テーブルを箱にする ===== */
+body > center > table,
+body > table{
   width:92% !important;
   max-width:900px !important;
   height:85vh !important;
   margin:7vh auto !important;
-  display:block !important;
   overflow-y:auto !important;
   background:rgba(255,255,255,0.15) !important;
   border-radius:25px !important;
