@@ -17,3 +17,12 @@ table{
 td{
   color:#f4f1e8 !important;
 }
+/* スマホ用調整 */
+@media screen and (max-width: 600px){
+
+  html, body{
+    background-size: contain !important;
+    background-position: center top !important;
+  }
+
+}
