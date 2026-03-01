@@ -1,28 +1,37 @@
-body{
-  background:url(http://ul.h3z.jp/gfkj4maf.jpeg) center/cover no-repeat fixed !important;
+/* ===== 背景をスマホでも完全固定にする ===== */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background:url(http://ul.h3z.jp/gfkj4maf.jpeg) center center / cover no-repeat;
+  z-index:-1;
 }
 
-/* NBBSの全テーブルに効かせる */
-table{
+/* 余計な背景指定を消す */
+html, body{
+  margin:0 !important;
+  padding:0 !important;
+  background:none !important;
+}
+
+/* ===== スレ全体を1つの箱にする ===== */
+body table:first-of-type{
   width:92% !important;
   max-width:900px !important;
+  height:85vh !important;
   margin:7vh auto !important;
+  display:block !important;
+  overflow-y:auto !important;
   background:rgba(255,255,255,0.15) !important;
   border-radius:25px !important;
   padding:25px !important;
   box-sizing:border-box !important;
 }
 
-/* 文字 */
-td{
+/* 文字色 */
+td, font{
   color:#f4f1e8 !important;
-}
-/* スマホ用調整 */
-@media screen and (max-width: 600px){
-
-  html, body{
-    background-size: contain !important;
-    background-position: center top !important;
-  }
-
 }
