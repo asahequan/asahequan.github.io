@@ -2,19 +2,18 @@ body{
   background:url(ここに背景画像URL) center/cover no-repeat fixed !important;
 }
 
-body > table{
+/* NBBSの全テーブルに効かせる */
+table{
   width:92% !important;
   max-width:900px !important;
-  height:85vh !important;
   margin:7vh auto !important;
-  display:block !important;
-  overflow-y:auto !important;
   background:rgba(255,255,255,0.15) !important;
   border-radius:25px !important;
   padding:25px !important;
   box-sizing:border-box !important;
 }
 
+/* 文字 */
 td{
   color:#f4f1e8 !important;
 }
